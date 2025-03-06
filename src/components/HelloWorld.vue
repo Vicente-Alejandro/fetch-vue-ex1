@@ -31,15 +31,13 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script lang="ts" setup>
+import { defineProps } from 'vue';
 
-export default defineComponent({
-  name: 'HelloWorld',
-  props: {
-    msg: String,
-  },
-});
+  defineProps<{
+    msg?: string
+  }>()
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

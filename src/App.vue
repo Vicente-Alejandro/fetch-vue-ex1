@@ -1,27 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+
+  <div class="">  
+    <h1>💀 Ejemplo de Fetch con Vue 3 💀</h1>
+    <h2>Usando composable y todo eso 👽</h2>
+    <ExPostList/>
+  </div>
+
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+<script lang="ts" setup>
 
-export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-});
+  import ExPostList from './components/ExPostList.vue';
+
 </script>
 
 <style>
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color: #000000;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #171616;
+}
+
+</style>
+
+<style scoped>
+
+  h1, li, label {
+    color: red;
+    text-align: center;
+  }
+
+  h2 {
+    color: tomato;
+    text-align: center;
+  }
+
 </style>
